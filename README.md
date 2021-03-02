@@ -1,15 +1,15 @@
- [] => Cadastro de Users;
+ [X] => Cadastro de Users;
  
- [] => Autenticação de Users;
+ [X] => Autenticação de Users;
 
- [] => Cadastro de Permissões;
+ [X] => Cadastro de Permissões;
 
- [] => Cadastro de Roles;
+ [X] => Cadastro de Roles;
 
- [] => Cadastro de produtos;
+ [X] => Cadastro de produtos;
 
- [] => Cadastro de User_Roles;
+ [X] => Cadastro de User_Roles;
 
- [] => Conexão User_Roles;
+ [X] => Conexão User_Roles;
 
- [] => Conexão Primission_Roles;
+ [X] => Conexão Primission_Roles;
