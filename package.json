@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --ignore-watch node_modules ./src/server.ts --trace-warnings",
+    "start": "ts-node-dev --ignore-watch node_modules ./src/server.ts --trace-warnings",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
   },
   "dependencies": {

@@ -11,7 +11,7 @@ class SessionController {
 
 		const userRespository = getCustomRepository(UserRespository);
 
-		const user = await userRespository.findOne({ username });
+		const user = await userRespository.findOne({ username },{relations:['roles']});
 
 		if (!user) {
 			return response.json({ err: 'User not found' });
@@ -23,7 +23,9 @@ class SessionController {
 			throw new AppError('Wrong password try again!', 400);
 		}
 
-		const token = await sign({}, '161a9173072a3eed4b6da9b1ee87d836', {
+    const roles  =  user.roles.map(r=>r.name);
+
+		const token = await sign({roles}, '161a9173072a3eed4b6da9b1ee87d836', {
 			subject: user.id,
 			expiresIn: '1d'
 		});
